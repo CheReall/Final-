@@ -2,11 +2,15 @@ version: '3'
 
 services:
   api:
+    restart: always
     build: .
     ports:
-    - "8888:8888"
+    - "8888:80"
+    depends_on:
+      - db
 
   db:
+    restart: always
     image: "postgres:11"
     container_name: "postgres_database"
     environment:
@@ -14,4 +18,4 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_DB=postgres
     ports:
-      - "55432:5432"
+      - "65432:5432"

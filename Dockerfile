@@ -4,14 +4,16 @@ WORKDIR /api
 
 ADD pubspec.* /api/
 
-RUN pub get
+RUN dart pub get
 
 ADD . /api/
 
-RUN pub get
+RUN dart pub get --offline --no-precompile
+
+RUN dart pub global activate conduit
 
 WORKDIR /api
 
-EXPOSE 8888
+EXPOSE 80
 
-ENTRYPOINT [ "pub", "run", "conduit:conduit", "server", "--port", "8888" ]
+ENTRYPOINT [ "dart", "pub", "run", "conduit:conduit", "serve", "--port", "80" ]

@@ -58,7 +58,7 @@ packages:
     source: hosted
     version: "1.17.1"
   conduit:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: conduit
       url: "https://pub.dartlang.org"
@@ -184,7 +184,7 @@ packages:
     source: hosted
     version: "1.0.4"
   jaguar_jwt:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: jaguar_jwt
       url: "https://pub.dartlang.org"
@@ -198,7 +198,7 @@ packages:
     source: hosted
     version: "0.6.5"
   lints:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: lints
       url: "https://pub.dartlang.org"
@@ -247,7 +247,7 @@ packages:
     source: hosted
     version: "2.1.0"
   path:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: path
       url: "https://pub.dartlang.org"
@@ -394,7 +394,7 @@ packages:
     source: hosted
     version: "1.2.1"
   test:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: test
       url: "https://pub.dartlang.org"
